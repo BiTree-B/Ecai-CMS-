@@ -1,10 +1,10 @@
 # Ecai-CMS-
 记录第一个自己写的自动化测试代码
 # version
-  python	3.13
-  pip	25.1.1
-  pytest	8.4.1	
-  selenium	4.35.0
+    python	3.13
+    pip	25.1.1
+    pytest	8.4.1	
+    selenium	4.35.0
     attrs	25.3.0	
     certifi	2025.8.3	
     cffi	1.17.1	
