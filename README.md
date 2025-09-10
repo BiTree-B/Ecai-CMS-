@@ -1,6 +1,6 @@
 # Ecai-CMS-
 记录第一个自己写的自动化测试代码
-# version
+# package version
     python	3.13
     pip	25.1.1
     pytest	8.4.1	
