@@ -16,11 +16,12 @@ def test_login(browser):
 
     # 输入帐密并登录
     username = browser.find_element(By.CLASS_NAME, "el-input__inner")
-    username.send_keys("***")
+    username.send_keys("demoadmin")
     password = browser.find_elements(By.CLASS_NAME, "el-input__inner")[1]
-    password.send_keys("***")
+    password.send_keys("HSdemo1512")
     print("帐密已输入")
 
+    # 登录按钮
     search_button = browser.find_element(
         By.CSS_SELECTOR,
         ".el-button.el-button--primary.el-button--large"
