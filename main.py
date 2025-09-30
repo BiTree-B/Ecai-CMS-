@@ -9,7 +9,7 @@ def test_main_flow(browser):
     print("开始测试主要流程...")
     test_window_size(browser)
     test_login(browser)
-    send_msg(browser,name = "李孝国")
+    send_msg(browser,name = "your name")
     print("所有测试完成！")
     
 
@@ -19,3 +19,4 @@ def test_main_flow(browser):
 if __name__ == "__main__":
     pytest.main([__file__ , "-v", "-s"])
 '''
+
