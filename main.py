@@ -1,5 +1,8 @@
-from login import test_window_size, test_login
-from send_msg import send_msg
+"""
+from locators.script_management import script_management
+from utils.login import test_window_size, test_login
+from tests.send_msg import send_msg
+from utils.module_menu import module_menu
 
 
 def test_main_flow(browser):
@@ -9,7 +12,13 @@ def test_main_flow(browser):
     print("开始测试主要流程...")
     test_window_size(browser)
     test_login(browser)
-    send_msg(browser,name = "your name")
+    module_menu(browser, partner_menu='脚本管理', son_menu=None)
+
+    script_create_button = browser.find_element(*script_management.SCRIPT_CREATE)
+    script_create_button.click()
+    qa_select_button = browser.find_element(*script_management.QA_SELECT)
+    qa_select_button.click()
+
     print("所有测试完成！")
     
 
@@ -19,4 +28,5 @@ def test_main_flow(browser):
 if __name__ == "__main__":
     pytest.main([__file__ , "-v", "-s"])
 '''
+"""
 
