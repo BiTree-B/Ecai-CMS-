@@ -16,9 +16,9 @@ def test_login(browser):
 
     # 输入帐密并登录
     username = browser.find_element(By.CLASS_NAME, "el-input__inner")
-    username.send_keys("demoadmin")
+    username.send_keys("")
     password = browser.find_elements(By.CLASS_NAME, "el-input__inner")[1]
-    password.send_keys("HSdemo1512")
+    password.send_keys("")
     print("帐密已输入")
 
     # 登录按钮
@@ -32,4 +32,5 @@ def test_login(browser):
     # 验证登录是否成功
     assert "login" not in browser.current_url.lower()
     print("登录成功")
+
 
